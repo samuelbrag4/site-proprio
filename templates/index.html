@@ -144,18 +144,18 @@
         <section class="section-contact" id="contact">
             <h2 class="section-heading">Entre em contato</h2>
 
-            <form action="#" class="contact-form">
+            <form action="/contact" method="POST" class="contact-form">
                 <div class="form-group">
-                    <input type="text" placeholder="Seu nome" class="form-input" />
-                    <input type="email" placeholder="Seu email" class="form-input" />
+                  <input type="text" name="name" placeholder="Seu nome" class="form-input" required/>
+                  <input type="email" name="email" placeholder="Seu email" class="form-input" required/>
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="Assunto" class="form-input" />
+                  <input type="text" name="subject" placeholder="Assunto" class="form-input" required/>
                 </div>
-                <textarea name="message" id="message" cols="30" rows="4" placeholder="Sua mensagem..."
-                    class="form-textarea"></textarea>
+                <textarea name="message" id="message" cols="30" rows="4" placeholder="Sua mensagem..." class="form-textarea" required></textarea>
                 <button type="submit" class="btn">Enviar</button>
-            </form>
+            </form>            
+             
         </section>
 
         <footer class="footer">
