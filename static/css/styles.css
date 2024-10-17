@@ -102,15 +102,32 @@ body {
     margin-top: 2rem;
     display: flex;
     gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn {
     padding: 0.8rem 2rem;
     background: var(--main-color);
     color: #fff;
-    border-radius: 5px;
+    border-radius: 100px;
     transition: 0.3s ease;
     text-decoration: none;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a:visited, a:link {
+    color: var(--highlight-color);
+}
+  
+.link-btn:visited, .link-btn:link {
+    color: var(--bg-color);
 }
 
 .btn:hover {
@@ -334,20 +351,6 @@ body {
 .form-input::placeholder,
 .form-textarea::placeholder {
     color: var(--text-color);
-}
-
-.btn {
-    margin-top: 1rem;
-    background: var(--main-color);
-    color: #fff;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    background-color: var(--highlight-color);
-    transform: scale(1.05);
 }
 
 /* Rodapé */
