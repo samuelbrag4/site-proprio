@@ -147,94 +147,30 @@ a:visited, a:link {
     box-shadow: 0 0 40px var(--highlight-color);
 }
 
-/* Texto animado */
-.text-animation {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-    margin-top: 1rem;
+/* Seção Conhecimentos */
+.section-heading {
+    margin: 50px;
 }
 
-.text-animation span {
-    position: relative;
-}
-
-.text-animation span::before {
-    content: "Desenvolvedor";
-    color: var(--main-color);
-    animation: words 20s infinite;
-}
-
-.text-animation span::after {
-    content: "";
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 1s infinite, typing 20s steps(14) infinite;
-}
-
-@keyframes cursor {
-    to {
-        border-left: 3px solid var(--main-color);
-    }
-}
-
-@keyframes words {
-    0%, 20% { content: "Aluno dos professores:"; }
-    21%, 40% { content: "Felipe Santos"; }
-    41%, 60% { content: "Thiago Ferreira"; }
-    61%, 80% { content: "Eduardo Correia"; }
-    81%, 100% { content: "Marcelo Carboni"; }
-}
-
-@keyframes typing {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% { width: 0; }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%, 100% { width: calc(100% + 8px); }
-}
-
-/* Seção Educação */
-.section-education {
+.section-skills {
     padding: 4rem 16rem;
     background-color: var(--secondary-bg-color);
     text-align: center;
 }
 
-.section-heading {
-    font-size: 2rem;
-    color: var(--text-color);
-    margin-bottom: 2rem;
-}
-
-.timeline {
+.skills-timeline {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.timeline-item {
+.skills-item {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    position: relative;
 }
 
-.timeline-dot {
-    width: 1rem;
-    height: 1rem;
-    background-color: var(--main-color);
-    border-radius: 50%;
-}
-
-.timeline-date {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--text-color);
-}
-
-.timeline-content {
+.skills-content {
     padding: 1rem;
     background-color: var(--tertiary-bg-color);
     border: 1px solid var(--main-color);
@@ -243,9 +179,13 @@ a:visited, a:link {
     transition: 0.3s ease;
 }
 
-.timeline-content:hover {
-    transform: scale(1.05);
+.skills-content:hover {
     box-shadow: 0 0 20px var(--highlight-color);
+    transform: scale(1.05);
+}
+
+.skills-image {
+    width: 100px;
 }
 
 /* Seção Serviços */
