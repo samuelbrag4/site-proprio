@@ -256,6 +256,7 @@ a:visited, a:link {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 /* Seção Depoimentos */
@@ -263,7 +264,8 @@ a:visited, a:link {
     display: flex;
     gap: 2rem;
     justify-content: center;
-    width: 50%;
+    width: 60vh;
+    height: 70vh;
 }
 
 /* Seção Depoimentos - card*/
@@ -282,7 +284,8 @@ a:visited, a:link {
 
 /* Seção Depoimentos */
 .testimonial-image {
-    width: 10rem;
+    border: solid 1px var(--highlight-color);
+    width: 7rem;
     border-radius: 50%;
     margin-bottom: 1rem;
 }

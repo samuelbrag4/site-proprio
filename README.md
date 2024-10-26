@@ -22,7 +22,7 @@ Este repositório contém o código-fonte do meu site pessoal, parte essencial d
 
 ## 🌐 Pré-visualização
 
-![Pré-visualização do site](../site-proprio/static/images/README.png) <!-- Substitua 'path/to/image.png' pelo caminho correto da imagem no repositório -->
+![Pré-visualização do site](./assets/img/README.png) <!-- Substitua 'path/to/image.png' pelo caminho correto da imagem no repositório -->
 
 ## 📝 Funcionalidades
 
