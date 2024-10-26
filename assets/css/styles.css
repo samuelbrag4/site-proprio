@@ -1,4 +1,4 @@
-/* Variáveis de cores */
+/* Variáveis de cores (para melhorar a organização) */
 :root {
     --bg-color: #111111; /* Cor de fundo principal */
     --secondary-bg-color: #232323; /* Cor de fundo secundária */
@@ -9,7 +9,7 @@
     --border-color: #575757; /* Cor de borda */
 }
 
-/* Reset básico */
+/* Reset básico do site */
 * {
     margin: 0;
     padding: 0;
@@ -19,13 +19,13 @@
     text-decoration: none;
 }
 
-/* Configurações gerais */
+/* Configurações gerais do site */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-/* Cabeçalho principal */
+/* Cabeçalho principal do sie*/
 .main-header {
     position: fixed;
     width: 100%;
@@ -38,6 +38,7 @@ body {
     z-index: 10;
 }
 
+/* Logo do cabeçalho */
 .header-logo {
     font-size: 2rem;
     color: var(--text-color);
@@ -45,6 +46,7 @@ body {
     transition: 0.3s ease;
 }
 
+/* Logo do cabeçalho animações */
 .header-logo:hover {
     color: var(--highlight-color);
 }
@@ -53,6 +55,7 @@ body {
     color: var(--highlight-color);
 }
 
+/* Menu de navegação */
 .header-nav .nav-link {
     font-size: 1.2rem;
     color: var(--text-color);
@@ -63,6 +66,7 @@ body {
     border-bottom: 3px solid transparent;
 }
 
+/* Menu de navegação animações */
 .header-nav .nav-link:hover,
 .header-nav .nav-link.active {
     color: var(--highlight-color);
@@ -79,25 +83,30 @@ body {
     padding: 4rem 16rem;
 }
 
+/* Conteúdo da seção Home */
 .home-content {
     flex: 1;
 }
 
+/* Título da seção Home */
 .home-content h1 {
     font-size: 3rem;
     font-weight: bold;
     color: var(--text-color);
 }
 
+/* Destaque da seção Home */
 .home-content .highlight {
     color: var(--highlight-color);
 }
 
+/* Parágrafo da seção Home */
 .home-content p {
     font-size: 1.2rem;
     margin-top: 1rem;
 }
 
+/* Botões da seção Home */
 .btn-group {
     margin-top: 2rem;
     display: flex;
@@ -107,6 +116,7 @@ body {
     justify-content: center;
 }
 
+/* Botões da seção Home */
 .btn {
     padding: 0.8rem 2rem;
     background: var(--main-color);
@@ -122,14 +132,17 @@ body {
     text-align: center;
 }
 
+/* Botões da seção Home */
 a:visited, a:link {
     color: var(--highlight-color);
 }
-  
+ 
+/* Botões da seção Home */
 .link-btn:visited, .link-btn:link {
     color: var(--bg-color);
 }
 
+/* Botões da seção Home */
 .btn:hover {
     background: var(--highlight-color);
     transform: scale(1.05);
@@ -143,6 +156,7 @@ a:visited, a:link {
     transition: 0.3s ease;
 }
 
+/* Imagem da seção Home */
 .home-image img:hover {
     box-shadow: 0 0 40px var(--highlight-color);
 }
@@ -152,24 +166,28 @@ a:visited, a:link {
     margin: 50px;
 }
 
+/* Seção Conhecimentos */
 .section-skills {
     padding: 4rem 16rem;
     background-color: var(--secondary-bg-color);
     text-align: center;
 }
 
+/* Seção Conhecimentos */
 .skills-timeline {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
+/* Seção Conhecimentos */
 .skills-item {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
 }
 
+/* Seção Conhecimentos */
 .skills-content {
     padding: 1rem;
     background-color: var(--tertiary-bg-color);
@@ -179,11 +197,13 @@ a:visited, a:link {
     transition: 0.3s ease;
 }
 
+/* Seção Conhecimentos - animação*/
 .skills-content:hover {
     box-shadow: 0 0 20px var(--highlight-color);
     transform: scale(1.05);
 }
 
+/* Seção Conhecimentos - imagem*/
 .skills-image {
     width: 100px;
 }
@@ -193,12 +213,14 @@ a:visited, a:link {
     padding: 4rem 16rem;
 }
 
+/* Seção Serviços */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
+/* Seção Serviços - card*/
 .service-card {
     background-color: var(--secondary-bg-color);
     padding: 2rem;
@@ -207,6 +229,7 @@ a:visited, a:link {
     transition: 0.4s ease;
 }
 
+/* Seção Serviços - card - animação*/
 .service-card:hover {
     background-color: var(--tertiary-bg-color);
     color: var(--highlight-color);
@@ -214,11 +237,13 @@ a:visited, a:link {
     transform: scale(1.05);
 }
 
+/* Seção Serviços */
 .service-content h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
+/* Seção Serviços */
 .service-content p {
     font-size: 1.1rem;
 }
@@ -229,12 +254,14 @@ a:visited, a:link {
     padding: 4rem 16rem;
 }
 
+/* Seção Depoimentos */
 .testimonials-grid {
     display: flex;
     gap: 2rem;
     justify-content: center;
 }
 
+/* Seção Depoimentos - card*/
 .testimonial-card {
     background-color: var(--bg-color);
     padding: 2rem;
@@ -243,20 +270,24 @@ a:visited, a:link {
     transition: 0.3s ease;
 }
 
+/* Seção Depoimentos - card - animação*/
 .testimonial-card:hover {
     box-shadow: 0 0 20px var(--highlight-color);
 }
 
+/* Seção Depoimentos */
 .testimonial-image {
     width: 10rem;
     border-radius: 50%;
     margin-bottom: 1rem;
 }
 
+/* Seção Depoimentos */
 .testimonial-rating {
     margin-bottom: 1rem;
 }
 
+/* Seção Depoimentos */
 .testimonial-rating .bx {
     color: gold;
 }
@@ -267,17 +298,20 @@ a:visited, a:link {
     text-align: center;
 }
 
+/* Seção Contato */
 .contact-form {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* Seção Contato */
 .form-group {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
+/* Seção Contato */
 .form-input,
 .form-textarea {
     width: 100%;
@@ -288,6 +322,7 @@ a:visited, a:link {
     border-radius: 5px;
 }
 
+/* Seção Contato */
 .form-input::placeholder,
 .form-textarea::placeholder {
     color: var(--text-color);
@@ -300,6 +335,7 @@ a:visited, a:link {
     text-align: center;
 }
 
+/* Rodapé */
 .footer-social a {
     font-size: 2rem;
     color: var(--highlight-color);
@@ -307,10 +343,12 @@ a:visited, a:link {
     transition: 0.3s ease;
 }
 
+/* Rodapé */
 .footer-social a:hover {
     color: var(--main-color);
 }
 
+/* Rodapé */
 .footer-links {
     display: flex;
     justify-content: center;
@@ -320,11 +358,13 @@ a:visited, a:link {
     margin-top: 2rem;
 }
 
+/* Rodapé */
 .footer-links a {
     color: var(--text-color);
     transition: 0.3s ease;
 }
 
+/* Rodapé - animação*/
 .footer-links a:hover {
     color: var(--highlight-color);
 }
